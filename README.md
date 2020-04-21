@@ -15,6 +15,7 @@ cd tools
 go run generate_sensision_metrics.go 2.4.0
 cp sensision.go ../collector
 cd ..
+go get -d github.com/centreon/warp10-sensision-exporter
 ```
 
 Build the binary
