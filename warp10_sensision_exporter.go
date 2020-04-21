@@ -32,7 +32,7 @@ import (
 
 func main() {
 	var (
-		listenAddress = kingpin.Flag("web.listen-address", "Address to listen on for web interface and telemetry.").Default(":9300").String()
+		listenAddress = kingpin.Flag("web.listen-address", "Address to listen on for web interface and telemetry.").Default(":9718").String()
 		metricsPath   = kingpin.Flag("web.telemetry-path", "Path under which to expose metrics.").Default("/metrics").String()
 		sensisionURL  = kingpin.Flag("warp10.url", "The URL for the Sensision endpoint for Warp10").Default("http://localhost:8082/metrics").String()
 	)
