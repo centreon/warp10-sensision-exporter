@@ -4,23 +4,22 @@
 
 Download the modules dependencies.
 
-```
+```shell
 go mod download
 ```
 
 Build the sensision metrics files. The tools command take the version of Warp10 in argument.
 
-```
+```shell
 cd tools
 go run generate_sensision_metrics.go 2.4.0
 cp sensision.go ../collector
 cd ..
-go get -d github.com/centreon/warp10-sensision-exporter
 ```
 
 Build the binary
 
-```
+```shell
 go build -a -o warp10_sensision_exporter
 ```
 
@@ -28,6 +27,6 @@ go build -a -o warp10_sensision_exporter
 
 To expose Sensision, we neeed to add the following option in starting command of Warp10.
 
-```
+```shell
 -D sesision.server.port=8082
 ```
