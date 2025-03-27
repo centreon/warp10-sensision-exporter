@@ -1,6 +1,6 @@
-*               @centreon/owners-go
+*                  @centreon/owners-go
 
-.github/**      @centreon/owners-pipelines
+.github/**         @centreon/owners-pipelines
 
-.gitleaks.toml                 @centreon/owners-security
-.gitleaksignore                @centreon/owners-security
+.gitleaks.toml     @centreon/owners-security
+.gitleaksignore    @centreon/owners-security
